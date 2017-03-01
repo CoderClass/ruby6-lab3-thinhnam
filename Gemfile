@@ -31,6 +31,11 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
 end
+
+group :development do
+  gem 'guard-rspec', require: false
+end
+
 group :test do
   gem 'capybara', '~> 2.10', '>= 2.10.1'
   gem 'database_cleaner'
